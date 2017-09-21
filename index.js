@@ -5,7 +5,10 @@ var cron = require('node-cron');
 
 client.on('ready', () => {
   client.user.setGame('/hh');
-  cron.schedule('0 12 * * *', function(){
+  cron.schedule('0 10 * * *', function(){
+    postHall();
+  });
+  cron.schedule('0 20 * * *', function(){
     postHall();
   });
 })
