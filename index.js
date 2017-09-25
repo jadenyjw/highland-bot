@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
 var cron = require('node-cron');
 
-
 client.on('ready', () => {
+  process.env.TZ = 'America/Toronto'
   client.user.setGame('/hh');
   cron.schedule('0 10 * * *', function(){
     postHall();
