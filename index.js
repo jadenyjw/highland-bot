@@ -19,7 +19,7 @@ client.on('message', message => {
   data = message.content;
   if(data == "/hh"){
     message.channel.send(new Date().toLocaleString(), {
-      file: "http://www.ucitonline.com/uofthighlandhall/images/image1.jpg" // Or replace with FileOptions object
+      file: "https://www.ucitonline.com/uofthighlandhall/images/image1.jpg" // Or replace with FileOptions object
   });
   }
 });
