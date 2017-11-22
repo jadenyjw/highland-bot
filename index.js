@@ -32,7 +32,7 @@ function postHall(){
     for (let [j, channel] of guild.channels){
       if(channel.name == "highland-hall-progress"){
         channel.send(new Date().toLocaleString(), {
-          file: "http://www.ucitonline.com/uofthighlandhall/images/image1.jpg" // Or replace with FileOptions object
+          file: "https://www.ucitonline.com/uofthighlandhall/images/image1.jpg" // Or replace with FileOptions object
       });
       }
     }
